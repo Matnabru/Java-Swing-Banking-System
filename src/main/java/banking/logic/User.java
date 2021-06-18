@@ -3,14 +3,11 @@ package banking.logic;
 import org.sqlite.SQLiteDataSource;
 
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class User {
     private final SQLiteDataSource dataSource;
     private final int id;
 
-    //TEMPORARY
-    Scanner sc = new Scanner(System.in);
 
     User(SQLiteDataSource dataSource, int id){
         this.dataSource = dataSource;
